@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: theme('colors.primary');
+  width: 100%;
+  padding: 27px 0;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
