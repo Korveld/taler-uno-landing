@@ -1,8 +1,8 @@
 .hero {
-  padding: 56px 0 183px 0;
+  padding: 56px 0 183px;
   background: theme('colors.primary');
 
   @media only screen and (min-width: theme('screens.md')) {
-    padding: 96px 0 272px 0;
+    padding: 96px 0 272px;
   }
 }

@@ -26,18 +26,18 @@
   min-height: 62px;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
   line-height: 140%;
   font-weight: 400;
   text-align: left;
+  text-decoration: none;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
-  text-decoration: none;
   transition: var(--transition-long);
-  font-size: 16px;
 
   @media only screen and (min-width: theme('screens.md')) {
-    min-height: 74px;
     padding: 2px 40px;
+    min-height: 74px;
     font-size: 24px;
   }
 }
