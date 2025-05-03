@@ -68,6 +68,9 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
+});
+
+jQuery(function ($) {
   var mq = window.matchMedia( "(min-width: 767.98px)" );
   var mqMob = window.matchMedia( "(max-width: 768px)" );
   
@@ -98,9 +101,6 @@ jQuery(function ($) {
       $('.lang-switcher__overlay').fadeOut(300);
     }
   });
-});
-
-jQuery(function ($) {
 });
 
 jQuery(function ($) {
