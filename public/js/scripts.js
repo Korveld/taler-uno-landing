@@ -101,12 +101,6 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
-});
-
-jQuery(function ($) {
-});
-
-jQuery(function ($) {
   $('.js-scroll-to').on('click', function(e) {
     e.preventDefault();
 
@@ -120,4 +114,10 @@ jQuery(function ($) {
       scrollTop: $scrollTo.offset().top
     }, 500);
   });
+});
+
+jQuery(function ($) {
+});
+
+jQuery(function ($) {
 });

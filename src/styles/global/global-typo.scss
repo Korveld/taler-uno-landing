@@ -68,12 +68,14 @@ h5,
 
 p,
 .p {
-  font-size: 24px;
-  line-height: 140%;
+  font-size: 16px;
+  line-height: 150%;
   font-weight: 400;
   letter-spacing: 0;
 
   @media only screen and (min-width: theme('screens.md')) {
+    font-size: 24px;
+    line-height: 140%;
   }
 
   &.p-md {
@@ -108,11 +110,16 @@ strong {
 }
 
 a {
-  font-size: 24px;
-  line-height: 140%;
+  font-size: 16px;
+  line-height: 150%;
   font-weight: 400;
   text-decoration: underline;
   letter-spacing: 0;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    font-size: 24px;
+    line-height: 140%;
+  }
 
   &:hover {
     text-decoration: none;
@@ -127,12 +134,14 @@ ul {
   list-style-type: disc;
 
   li {
-    font-size: 24px;
-    line-height: 140%;
+    font-size: 16px;
+    line-height: 150%;
     font-weight: 400;
     letter-spacing: 0;
 
     @media only screen and (min-width: theme('screens.md')) {
+      font-size: 24px;
+      line-height: 140%;
     }
   }
 }
@@ -142,12 +151,14 @@ ol {
   list-style: decimal;
 
   li {
-    font-size: 24px;
-    line-height: 140%;
+    font-size: 16px;
+    line-height: 150%;
     font-weight: 400;
     letter-spacing: 0;
 
     @media only screen and (min-width: theme('screens.md')) {
+      font-size: 24px;
+      line-height: 140%;
     }
   }
 }

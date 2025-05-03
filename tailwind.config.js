@@ -14,27 +14,6 @@ module.exports = {
       'sans': ['Space Grotesk', 'sans-serif'],
     },
     extend: {
-      fontSize: {
-        '19px': ['19px', 'normal'],
-      },
-      minWidth: {
-        '24px': '24px',
-      },
-      width: {
-        '154px': '154px',
-      },
-      minHeight: {
-        '24px': '24px',
-      },
-      height: {
-        '170px': '170px',
-      },
-      opacity: {
-        '56': '.56',
-      },
-      spacing: {
-        '90px': '90px',
-      },
       colors: {
         primary: '#0B152A',
         secondary: '#E9EFF3',
