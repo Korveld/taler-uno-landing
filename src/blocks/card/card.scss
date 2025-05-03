@@ -38,6 +38,29 @@
       font-size: 20px;
       letter-spacing: -.8px;
     }
+
+    &--lg {
+      font-size: 20px;
+      line-height: 140%;
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: 0;
+
+      @media only screen and (min-width: theme('screens.md')) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__number {
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: 0;
+
+    @media only screen and (min-width: theme('screens.md')) {
+      font-size: 64px;
+    }
   }
 
   &--type2 {
@@ -77,6 +100,35 @@
       @media only screen and (min-width: theme('screens.md')) {
         font-size: 20px;
         letter-spacing: -.8px;
+      }
+    }
+  }
+
+  &--type3 {
+    padding: 32px;
+    background: theme('colors.light3');
+    border-radius: 12px;
+
+    .card__text-1 {
+      font-size: 17px;
+      line-height: 150%;
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: -.5px;
+
+      @media only screen and (min-width: theme('screens.md')) {
+      }
+    }
+
+    .card__text-2 {
+      margin-top: 6px;
+      font-size: 26px;
+      line-height: 150%;
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: -.5px;
+
+      @media only screen and (min-width: theme('screens.md')) {
       }
     }
   }
