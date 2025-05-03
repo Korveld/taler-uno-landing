@@ -1,24 +1,4 @@
 jQuery(function ($) {
-
-  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
-    $('.cookie-banner').fadeIn(300);
-  }
-  
-  $('#accept-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-
-  $('#reject-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-  
-});
-
-jQuery(function ($) {
   $('.faq__question').on('click', function(e) {
     e.preventDefault();
     if ($(this).parent().hasClass('is-open')) {
@@ -44,6 +24,26 @@ jQuery(function ($) {
       });
     }
   });
+});
+
+jQuery(function ($) {
+
+  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
+    $('.cookie-banner').fadeIn(300);
+  }
+  
+  $('#accept-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+
+  $('#reject-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+  
 });
 
 jQuery(function ($) {
@@ -101,6 +101,12 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
+});
+
+jQuery(function ($) {
+});
+
+jQuery(function ($) {
   $('.js-scroll-to').on('click', function(e) {
     e.preventDefault();
 
@@ -114,10 +120,4 @@ jQuery(function ($) {
       scrollTop: $scrollTo.offset().top
     }, 500);
   });
-});
-
-jQuery(function ($) {
-});
-
-jQuery(function ($) {
 });

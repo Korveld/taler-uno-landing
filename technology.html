@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taler | Technology</title>
+
+  <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Taler" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./public/css/style.css?v=1.0.0">
+</head>
+<body>
+
+<header class="header is-light">
+  <button type="button" class="header__burger"></button>
+  <div class="container-fluid">
+    <a href="/index.html" class="header__logo">
+      <picture>
+        <source srcset="./public/img/logo-dark.webp" type="image/webp">
+        <img src="./public/img/logo-dark.png" alt="" width="119" height="46">
+      </picture>
+    </a>
+    
+    <div class="header__actions">
+      <div class="menu">
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li>
+              <a href="./technology.html">Technology</a>
+            </li>
+            <li>
+              <a href="./society.html">Society</a>
+            </li>
+            <li>
+              <a href="./tal-coin.html">Tal coin</a>
+            </li>
+            <li>
+              <a href="#">Explorer</a>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a href="#">
+              <img src="./public/img/socials/mail.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/discord.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/telegram.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/facebook.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/twitter.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lang-switcher">
+        <div class="lang-switcher__overlay"></div>
+        <button type="button" class="lang-switcher__active">
+          <span>
+            <span>Ru</span>
+          </span>
+        </button>
+        
+        <ul class="lang-switcher__dropdown">
+          <li>
+            <a href="#">
+              <img src="./public/img/flags/gb.svg" alt="">
+              <span>English</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./public/img/flags/de.svg" alt="">
+              <span>Deustch</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./public/img/flags/es.svg" alt="">
+              <span>Español</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./public/img/flags/fr.svg" alt="">
+              <span>Français</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="is-active">
+              <img src="./public/img/flags/ru.svg" alt="">
+              <span>Русский</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="md:pt-[96px] md:pb-[172px] pt-[56px] pb-[112px]">
+    <div class="container">
+      <div class="md:mb-[96px] mb-[56px]">
+        <img src="./public/img/technology/img1.svg" alt="">
+      </div>
+      <h1 class="md:mb-9 mb-10">Technology</h1>
+      <h3 class="font-normal">Secure & Effortless Experience</h3>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px]">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Fast Blockchain</p>
+        </div>
+        <div class="md:offset-1 md:col-7">
+          <h2 class="md:mb-[64px] mb-[48px]">The Taler Blockchain achieves over 3.5 million transactions per second through its unique Proof-of-Utility Consensus</h2>
+          <h4 class="md:mb-[96px] mb-[64px] font-normal">This capability makes Taler an ideal “Overlay Network” for integrating with other blockchain systems, like Bitcoin.</h4>
+          <div class="md:mb-[96px] mb-[64px]">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./public/img/technology/icons-dots.svg">
+              <img src="./public/img/technology/icons-dots2.svg" alt="">
+            </picture>
+          </div>
+          <p class="mb-[48px]">Instead of storing data directly on the blockchain, Taler saves hashes that link back to the original data at a secondary layer. This approach offloads heavy transaction data by hashing, encrypting, and signing each transaction bundle before archiving, which keeps the main pipeline streamlined and efficient.`</p>
+          <a href="#" class="btn btn-outline-primary">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px] bg-light3">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">TALER for Developers</p>
+        </div>
+        <div class="md:offset-1 md:col-7">
+          <h2 class="md:mb-[64px] mb-[48px]">Quick start and deep dive into development on TALER</h2>
+          <a href="#" class="btn btn-outline-primary">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px]">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Substrate & TALER</p>
+        </div>
+        <div class="md:offset-1 md:col-7">
+          <h2 class="md:mb-[64px] mb-[48px]">The Taler token is built on the Substrate blockchain platform, which provides flexibility and scalability to the system, allowing the technology to be adapted to various needs and conditions.</h2>
+          <h4 class="md:mb-[64px] mb-[48px] font-normal">The principles of decentralization and community governance ensure equality among participants and the ability to make decisions that take into account the opinions of all stakeholders.</h4>
+          <a href="#" class="btn btn-outline-primary">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
+        <div class="row mdMax:gap-[32px]">
+          <div class="md:offset-3 md:col-3">
+            <h4>Transparency</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/technology/icons-outlines.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Openness and accessibility of information about financial transactions for all network participants</h4>
+          </div>
+        </div>
+
+        <div class="row mdMax:gap-[32px]">
+          <div class="md:offset-3 md:col-3">
+            <h4>Security</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/technology/icons-outlines2.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Protection against fraud, reduced risks through cryptographic methods</h4>
+          </div>
+        </div>
+
+        <div class="row mdMax:gap-[32px]">
+          <div class="md:offset-3 md:col-3">
+            <h4>Efficiency</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/technology/icons-outlines3.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Reduction of transaction processing time and simplification of processes</h4>
+          </div>
+        </div>
+
+        <div class="row mdMax:gap-[32px]">
+          <div class="md:offset-3 md:col-3">
+            <h4>Low fees</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/technology/icons-outlines4.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Thanks to the efficiency and low costs of blockchain technology</h4>
+          </div>
+        </div>
+
+        <div class="row mdMax:gap-[32px]">
+          <div class="md:offset-3 md:col-3">
+            <h4>Financial inclusivity</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/technology/icons-outlines5.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Access to financial services for the entire population, including those who have been excluded from the traditional financial system</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="flex md:justify-between mdMax:flex-col mdMax:gap-20">
+      <div>
+        <div class="md:mb-[43px] mb-6">
+          <picture>
+            <source srcset="./public/img/logo-footer.webp" type="image/webp">
+            <img src="./public/img/logo-footer.png" alt="" width="38" height="38">
+          </picture>
+        </div>
+        <h5 class="max-w-[644px] text-white">Want to learn more about Taler? Start by using our Explorer to track real-time transactions on the Taler blockchain. This tool makes it easy to find specific transactions or view recent transactions.</h5>
+      </div>
+      
+      <div class="md:inline-flex md:gap-[40px] mdMax:grid mdMax:grid-cols-2 gap-4">
+        <div class="inline-flex flex-col gap-8">
+          <p class="footer-nav__title">About</p>
+          
+          <ul class="footer-nav">
+            <li><a href="./technology.html">Technology</a></li>
+            <li><a href="./society.html">Society</a></li>
+            <li><a href="./tal-coin.html">Tal coin</a></li>
+            <li><a href="#">Explorer</a></li>
+          </ul>
+        </div>
+
+        <div class="inline-flex flex-col gap-8">
+          <p class="footer-nav__title">Base</p>
+
+          <ul class="footer-nav">
+            <li><a href="./terms.html">Term of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="md:mt-[160px] mt-[112px] flex md:justify-between md:items-center mdMax:flex-col gap-8">
+      <a href="mailto:info@taler.foundation" class="footer__link">info@taler.foundation</a>
+
+      <div class="socials">
+        <a href="#">
+          <img src="./public/img/socials/mail.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/discord.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/telegram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/facebook.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/twitter.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner">
+  <h4 class="cookie-banner__title">Privacy Settings</h4>
+  <p class="p p-sm cookie-banner__text">We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+  <div class="cookie-banner__btns">
+    <button type="button" class="cookie-banner__btn">
+      <span>Customize</span>
+    </button>
+    <button type="button" class="cookie-banner__btn" id="reject-cookies">
+      <span>Reject All</span>
+    </button>
+    <button type="button" class="cookie-banner__btn" id="accept-cookies">
+      <span>Accept All</span>
+    </button>
+  </div>
+</div>
+
+<script src="./public/js/vendor-min.js?v=1.0.0"></script>
+<script src="./public/js/scripts-min.js?v=1.0.0"></script>
+</body>
+</html>
