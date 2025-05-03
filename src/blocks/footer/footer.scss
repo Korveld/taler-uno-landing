@@ -1,2 +1,18 @@
 .footer {
+  padding: 120px 0 112px;
+  background: theme('colors.primary');
+
+  &__link {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

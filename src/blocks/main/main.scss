@@ -1,9 +1,10 @@
 .main {
-  padding: 100px 0 0;
+  padding: 62px 0 0;
   flex: 1 0 auto;
   //height: 100%;
 
   @media only screen and (min-width: theme('screens.md')) {
+    padding: 100px 0 0;
   }
 
   @media only screen and (max-width: theme('screens.mdMax.max')) {

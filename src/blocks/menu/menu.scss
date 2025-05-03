@@ -1,23 +1,83 @@
 .menu {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  gap: 40px;
 
-  a {
-    padding: 10px 0;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 140%;
-    font-weight: 400;
-    text-decoration: none;
-    letter-spacing: 0;
-    color: theme('colors.light2');
-    transition: var(--transition-base);
+  @media only screen and (min-width: theme('screens.md')) {
+    display: block !important;
+  }
 
-    &:hover {
-      color: theme('colors.blue');
+  @media only screen and (max-width: theme('screens.mdMax.max')) {
+    position: fixed;
+    z-index: 3;
+    top: 62px;
+    left: 0;
+    padding: 0;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: calc(100% - 62px);
+    background: theme('colors.primary');
+  }
+
+  &__wrapper {
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      padding: 64px 0 0;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 48px;
+    }
+
+    a {
+      padding: 10px 0;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: 0;
+      color: theme('colors.light2');
+      transition: var(--transition-base);
+
+      @media only screen and (max-width: theme('screens.mdMax.max')) {
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      &:hover {
+        color: theme('colors.blue');
+      }
+    }
+  }
+
+  &__socials {
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+    }
+  }
+
+  .socials {
+    margin-top: auto;
+    padding-top: 80px;
+    padding-bottom: 46px;
+
+    @media only screen and (min-width: theme('screens.md')) {
+      display: none;
     }
   }
 }

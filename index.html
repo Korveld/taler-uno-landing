@@ -23,33 +23,68 @@
 <body>
 
 <header class="header">
-  <div class="container">
-    <a href="/index.html">
+  <button type="button" class="header__burger"></button>
+  <div class="container-fluid">
+    <a href="/index.html" class="header__logo">
       <picture>
         <source srcset="./public/img/logo.webp" type="image/webp">
         <img src="./public/img/logo.png" alt="" width="119" height="46">
       </picture>
     </a>
     
+    <!--Light logo variant-->
+    <!--<a href="/index.html" class="header__logo">
+      <picture>
+        <source srcset="./public/img/logo-dark.webp" type="image/webp">
+        <img src="./public/img/logo-dark.png" alt="" width="119" height="46">
+      </picture>
+    </a>-->
+    <!--End Light logo variant-->
+    
     <div class="header__actions">
-      <ul class="menu">
-        <li>
-          <a href="#">Technology</a>
-        </li>
-        <li>
-          <a href="#">Society</a>
-        </li>
-        <li>
-          <a href="#">Tal coin</a>
-        </li>
-        <li>
-          <a href="#">Explorer</a>
-        </li>
-      </ul>
+      <div class="menu">
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li>
+              <a href="./technology.html">Technology</a>
+            </li>
+            <li>
+              <a href="./society.html">Society</a>
+            </li>
+            <li>
+              <a href="./tal-coin.html">Tal coin</a>
+            </li>
+            <li>
+              <a href="#">Explorer</a>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a href="#">
+              <img src="./public/img/socials/mail.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/discord.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/telegram.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/facebook.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./public/img/socials/twitter.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
       
       <div class="lang-switcher">
-        <button class="lang-switcher__active">
-          <span>Ru</span>
+        <div class="lang-switcher__overlay"></div>
+        <button type="button" class="lang-switcher__active">
+          <span>
+            <span>Ru</span>
+          </span>
         </button>
         
         <ul class="lang-switcher__dropdown">
@@ -100,7 +135,318 @@
         <h1 class="mb-[56px] md:mb-[72px] text-light">Your reliable partner in the world of cryptocurrencies</h1>
         <h3 class="mb-[40px] text-light font-normal">Taler is an innovative blockchain-based project for processing finances and payments.</h3>
         <div>
-          <a href="#" class="btn btn-outline-primary"><span>Learn more</span></a>
+          <a href="#" class="btn btn-outline-primary !text-white">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="md:pt-[224px] md:pb-[160px] py-[120px]">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Taler solutions for financial challenges</p>
+        </div>
+        <div class="md:offset-1 md:col-4">
+          <h2 class="mb-[20px]">Access to financial services through digital technologies</h2>
+          <p class="p-md">Lack of banks in remote areas and insufficient income limits access to banking services</p>
+        </div>
+        <div class="md:offset-1 md:col-4">
+          <h2 class="mb-[20px]">Low commissions thanks to Blockhain technology</h2>
+          <p class="p-md">Banks and payment systems often charge high fees for transactions</p>
+        </div>
+      </div>
+
+      <div class="row mdMax:gap-[80px] mt-[80px] md:mt-[120px]">
+        <div class="md:offset-3 md:col-4">
+          <h2 class="mb-[20px]">High transparency, strong data protection, and secure transactions</h2>
+          <p class="p-md">Transparency and security issues are common challenges in financial transactions</p>
+        </div>
+        <div class="md:offset-1 md:col-4">
+          <h2 class="mb-[20px]">A new, decentralized approach to financial transactions</h2>
+          <p class="p-md">Corruption and economic instability reduce confidence in banks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px]">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">An app where innovation meets security</p>
+        </div>
+        <div class="md:offset-1 md:col-7">
+          <h2 class="mb-[48px]">A decentralized and open internet, built by the community using technology developed by the Taler App</h2>
+          <a href="#" class="btn btn-outline-primary">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="md:mt-[160px] mt-[112px] flex flex-col gap-[112px]">
+        <div class="row mdMax:gap-8">
+          <div class="md:col-2 md:offset-3">
+            <h4>Financial transactions</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/icons/icon1.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Every transaction is tracked and verified thanks to Blockhain technology</h4>
+          </div>
+        </div>
+
+        <div class="row mdMax:gap-8">
+          <div class="md:col-2 md:offset-3">
+            <h4>Staking</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/icons/icon2.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Every transaction is tracked and verified thanks to Blockhain technology</h4>
+          </div>
+        </div>
+
+        <div class="row mdMax:gap-8">
+          <div class="md:col-2 md:offset-3">
+            <h4>Vivid staking</h4>
+          </div>
+          <div class="md:col-2">
+            <img src="./public/img/icons/icon3.svg" alt="" class="md:mx-auto">
+          </div>
+          <div class="md:col-4">
+            <h4 class="font-normal">Every transaction is tracked and verified thanks to Blockhain technology</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px]">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Why choose a token?</p>
+        </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="card-grid">
+            <div class="card">
+              <div class="card__title">Safety</div>
+              <div class="card__img">
+                <img src="./public/img/card/art1.svg" alt="">
+              </div>
+              <div class="card__text">Fraud protection, risk reduction thanks to cryptographic methods</div>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Speed</div>
+              <div class="card__img">
+                <img src="./public/img/card/art2.svg" alt="">
+              </div>
+              <div class="card__text">Reduce transaction processing time and simplify processes</div>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Transparency</div>
+              <div class="card__img">
+                <img src="./public/img/card/art3.svg" alt="">
+              </div>
+              <div class="card__text">Every transaction is tracked and verified thanks to Blockhain technology</div>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Reliability</div>
+              <div class="card__img">
+                <img src="./public/img/card/art4.svg" alt="">
+              </div>
+              <div class="card__text">Stable performance and consistent access without intermediaries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px]">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Services</p>
+        </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="card-grid">
+            <div class="card card--type2 card--light">
+              <div class="card__img">
+                <img src="./public/img/card/icon1.svg" alt="">
+              </div>
+              <div class="card__title">Creating a wallet</div>
+              <div class="card__text">Lack of banks in remote areas and insufficient income limits access to banking services</div>
+            </div>
+
+            <div class="card card--type2 card--light">
+              <div class="card__img">
+                <img src="./public/img/card/icon2.svg" alt="">
+              </div>
+              <div class="card__title">Buy</div>
+              <div class="card__text">Lack of banks in remote areas and insufficient income limits access to banking services</div>
+            </div>
+
+            <div class="card card--type2 card--light">
+              <div class="card__img">
+                <img src="./public/img/card/icon3.svg" alt="">
+              </div>
+              <div class="card__title">Send</div>
+              <div class="card__text">Lack of banks in remote areas and insufficient income limits access to banking services</div>
+            </div>
+
+            <div class="card card--type2 card--light">
+              <div class="card__img">
+                <img src="./public/img/card/icon4.svg" alt="">
+              </div>
+              <div class="card__title">Staking</div>
+              <div class="card__text">Lack of banks in remote areas and insufficient income limits access to banking services</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px] bg-light3">
+    <div class="container">
+      <div class="row mdMax:gap-[80px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Explorer</p>
+        </div>
+        
+        <div class="md:offset-1 md:col-7">
+          <h2 class="md:mb-16 mb-14">Want to learn more about Taler?<br>
+            Start by using our Explorer to track
+            real-time transactions on the Taler blockchain.</h2>
+          <div class="md:mb-16 mb-14">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./public/img/img1.svg"> 
+              <img src="./public/img/img1-mob.svg" alt="">
+            </picture>
+          </div>
+          <h2 class="mb-12">This tool makes it easy to find specific transactions or view recent transactions.</h2>
+          <a href="#" class="btn btn-outline-primary">
+            <span>Learn more</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:py-[160px] py-[112px]">
+    <div class="container">
+      <div class="row mdMax:gap-[48px]">
+        <div class="md:col-2">
+          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">FAQ</p>
+        </div>
+        
+        <div class="md:offset-1 md:col-9">
+          <div class="faq">
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">How does work?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">What is Taler?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">What privacy is being provided?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">Which digital assets support?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">What are the advantages of using?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">How can I start using?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">Who's behind the development?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question">
+                <div class="faq__question-text">What a roadmap?</div>
+                <div class="faq__question-icon"></div>
+              </div>
+              <div class="faq__answer">
+                <div class="faq__answer-wrapper">
+                  <p>Every transaction is tracked and verified thanks to Blockhain technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -108,7 +454,80 @@
 </main>
 
 <footer class="footer">
+  <div class="container">
+    <div class="flex md:justify-between mdMax:flex-col mdMax:gap-20">
+      <div>
+        <div class="md:mb-[43px] mb-6">
+          <picture>
+            <source srcset="./public/img/logo-footer.webp" type="image/webp">
+            <img src="./public/img/logo-footer.png" alt="" width="38" height="38">
+          </picture>
+        </div>
+        <h5 class="max-w-[644px] text-white">Want to learn more about Taler? Start by using our Explorer to track real-time transactions on the Taler blockchain. This tool makes it easy to find specific transactions or view recent transactions.</h5>
+      </div>
+      
+      <div class="md:inline-flex md:gap-[40px] mdMax:grid mdMax:grid-cols-2 gap-4">
+        <div class="inline-flex flex-col gap-8">
+          <p class="footer-nav__title">About</p>
+          
+          <ul class="footer-nav">
+            <li><a href="./technology.html">Technology</a></li>
+            <li><a href="./society.html">Society</a></li>
+            <li><a href="./tal-coin.html">Tal coin</a></li>
+            <li><a href="#">Explorer</a></li>
+          </ul>
+        </div>
+
+        <div class="inline-flex flex-col gap-8">
+          <p class="footer-nav__title">Base</p>
+
+          <ul class="footer-nav">
+            <li><a href="./terms.html">Term of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="md:mt-[160px] mt-[112px] flex md:justify-between md:items-center mdMax:flex-col gap-8">
+      <a href="mailto:info@taler.foundation" class="footer__link">info@taler.foundation</a>
+
+      <div class="socials">
+        <a href="#">
+          <img src="./public/img/socials/mail.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/discord.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/telegram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/facebook.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./public/img/socials/twitter.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<div class="cookie-banner">
+  <h4 class="cookie-banner__title">Privacy Settings</h4>
+  <p class="p p-sm cookie-banner__text">We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+  <div class="cookie-banner__btns">
+    <button type="button" class="cookie-banner__btn">
+      <span>Customize</span>
+    </button>
+    <button type="button" class="cookie-banner__btn" id="reject-cookies">
+      <span>Reject All</span>
+    </button>
+    <button type="button" class="cookie-banner__btn" id="accept-cookies">
+      <span>Accept All</span>
+    </button>
+  </div>
+</div>
 
 <script src="./public/js/vendor-min.js?v=1.0.0"></script>
 <script src="./public/js/scripts-min.js?v=1.0.0"></script>

@@ -1,2 +1,111 @@
 .cookie-banner {
+  position: fixed;
+  z-index: 9999;
+  right: 48px;
+  bottom: 48px;
+  padding: 40px 32px 32px;
+  display: none;
+  width: 533px;
+  color: #fff;
+  background: #182133;
+  border-radius: 20px;
+  box-shadow: 0 2px 40px 0 rgba(12, 20, 36, .95);
+
+  @media only screen and (max-width: theme('screens.mdMax.max')) {
+    right: 32px;
+    bottom: 12px;
+    padding: 32px 24px 24px;
+    width: calc(100% - 64px);
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    min-height: 62px;
+    background: transparent;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      min-height: 50px;
+    }
+
+    &:hover {
+
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      padding: 2px; // Adjust border thickness
+      opacity: 1;
+      content: '';
+      background: linear-gradient(180deg, #283446, #283446);
+      border-radius: 50px;
+      transition: var(--transition-long);
+      inset: 0;
+      -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+      mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    &:after {
+      position: absolute;
+      padding: 2px; // Adjust border thickness
+      opacity: 0;
+      content: '';
+      background: linear-gradient(160deg, #35ff89, #3177f3);
+      border-radius: 50px;
+      transition: var(--transition-long);
+      inset: 0;
+      -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+      mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 140%;
+      font-weight: 400;
+      letter-spacing: 0;
+      color: rgb(255, 255, 255);
+
+      @media only screen and (min-width: theme('screens.md')) {
+        font-size: 16px;
+        color: rgb(250, 253, 255);
+      }
+    }
+  }
 }

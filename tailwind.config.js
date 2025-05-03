@@ -45,6 +45,7 @@ module.exports = {
         dark5: '#1D293B',
         light: '#E9EFF3',
         light2: '#FAFDFF',
+        light3: '#F0F5F9',
         gray: '#707682',
         blue: '#3177f3',
         blue2: '#329dd5',
@@ -93,7 +94,7 @@ module.exports = {
   },
   plugins: [
     require('tailwind-bootstrap-grid')({
-      containerMaxWidths: { sm: '100%', md: '100%', lg: '100%', xl: '1312px', '2xl': '1312px', '3xl': '1312px', '4xl': '1312px', '5xl': '1312px' },
+      containerMaxWidths: { sm: '100%', md: '100%', lg: '100%', xl: '1376px', '2xl': '1376px', '3xl': '1376px', '4xl': '1376px', '5xl': '1376px' },
       gridGutterWidth: '24px',
       gridColumns: 12
     }),
