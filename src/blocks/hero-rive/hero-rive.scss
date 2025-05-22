@@ -1,0 +1,13 @@
+.hero-rive {
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

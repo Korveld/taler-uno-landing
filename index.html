@@ -125,15 +125,13 @@
 </header>
 
 <main class="main">
-  <section class="hero">
+  <section class="hero !pt-0">
     <div class="container">
-      <div class="mb-[64px] md:mb-[96px]">
-        <img src="./public/img/hero/img.svg" alt="">
-        <!--<video autoplay loop muted class="hero__video">
-          <source src="./public/videos/01.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>-->
-        <!--<canvas id="canvas" width="500" height="500"></canvas>-->
+      <div>
+        <!--<img src="./public/img/hero/img.svg" alt="">-->
+        <div class="hero-rive__container">
+          <canvas id="hero-rive-canvas"></canvas>
+        </div>
       </div>
       <div class="max-w-[1090px]">
         <h1 class="mb-[56px] md:mb-[72px] text-light">Your reliable partner in the world of cryptocurrencies</h1>
@@ -254,34 +252,46 @@
         </div>
         <div class="md:offset-1 md:col-9">
           <div class="card-grid">
-            <div class="card">
+            <div class="card card--type-rive">
               <div class="card__title">Safety</div>
-              <div class="card__img">
+              <!--<div class="card__img">
                 <img src="./public/img/card/art1.svg" alt="">
+              </div>-->
+              <div class="card__rive">
+                <canvas id="card-rive-canvas-1"></canvas>
               </div>
               <div class="card__text">Fraud protection, risk reduction thanks to cryptographic methods</div>
             </div>
 
-            <div class="card">
+            <div class="card card--type-rive">
               <div class="card__title">Speed</div>
-              <div class="card__img">
+              <!--<div class="card__img">
                 <img src="./public/img/card/art2.svg" alt="">
+              </div>-->
+              <div class="card__rive">
+                <canvas id="card-rive-canvas-2"></canvas>
               </div>
               <div class="card__text">Reduce transaction processing time and simplify processes</div>
             </div>
 
-            <div class="card">
+            <div class="card card--type-rive">
               <div class="card__title">Transparency</div>
-              <div class="card__img">
+              <!--<div class="card__img">
                 <img src="./public/img/card/art3.svg" alt="">
+              </div>-->
+              <div class="card__rive">
+                <canvas id="card-rive-canvas-3"></canvas>
               </div>
               <div class="card__text">Every transaction is tracked and verified thanks to Blockhain technology</div>
             </div>
 
-            <div class="card">
+            <div class="card card--type-rive">
               <div class="card__title">Reliability</div>
-              <div class="card__img">
+              <!--<div class="card__img">
                 <img src="./public/img/card/art4.svg" alt="">
+              </div>-->
+              <div class="card__rive">
+                <canvas id="card-rive-canvas-4"></canvas>
               </div>
               <div class="card__text">Stable performance and consistent access without intermediaries</div>
             </div>
@@ -555,25 +565,8 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/@rive-app/canvas@latest"></script>
 <script src="./public/js/vendor-min.js?v=1.0.0"></script>
 <script src="./public/js/scripts-min.js?v=1.0.0"></script>
-<!--<script src="https://unpkg.com/@rive-app/canvas@latest"></script>
-<script>
-  const layout = new rive.Layout({
-    fit: rive.Fit.Cover,
-  });
-  const r = new rive.Rive({
-    src: "./src/riv_animations/index_anim.riv",
-    // OR the path to a discoverable and public Rive asset
-    // src: '/public/example.riv',
-    canvas: document.getElementById("canvas"),
-    layout: layout,
-    autoplay: true,
-    // artboard: "Arboard", // Optional. If not supplied the default is selected
-    onLoad: () => {
-      r.resizeDrawingSurfaceToCanvas();
-    },
-  });
-</script>-->
 </body>
 </html>

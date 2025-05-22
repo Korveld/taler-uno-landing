@@ -63,6 +63,43 @@
     }
   }
 
+  &__rive {
+    width: 100%;
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 300px;
+
+      @media only screen and (min-width: theme('screens.md')) {
+        height: 440px;
+      }
+    }
+  }
+
+  &--type-rive {
+    padding-right: 0;
+    padding-left: 0;
+    gap: 0;
+
+    @media only screen and (min-width: theme('screens.md')) {
+      padding-right: 0;
+      padding-left: 0;
+      gap: 0;
+    }
+
+    .card__title,
+    .card__text {
+      padding-right: 32px;
+      padding-left: 32px;
+
+      @media only screen and (min-width: theme('screens.md')) {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    }
+  }
+
   &--type2 {
     align-items: stretch;
     gap: 0;
