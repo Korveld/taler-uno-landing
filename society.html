@@ -116,10 +116,14 @@
 </header>
 
 <main class="main">
-  <section class="md:pt-[96px] md:pb-[172px] pt-[56px] pb-[112px] bg-light2">
+  <section class="pt-0 md:pb-[172px] pb-[112px] bg-light2">
     <div class="container">
-      <div class="md:mb-[96px] mb-[56px]">
-        <img src="./public/img/society/hero-img.svg" alt="">
+      <div>
+        <!--<img src="./public/img/society/hero-img.svg" alt="">-->
+        <video autoplay loop muted class="hero__video">
+          <source src="./src/videos/02.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <h1 class="md:mb-9 mb-10">Society</h1>
       <h3 class="font-normal max-w-[1090px]">The goal of the project is to eliminate the problem
@@ -131,72 +135,77 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Our values
-            and philosophy</p>
-        </div>
-        <div class="md:offset-1 md:col-7">
-          <h2>The core principles guiding Taler in building a secure, private, and accessible financial system</h2>
-        </div>
-      </div>
-      
-      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Privacy and anonymity</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/society/icons-outlines.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Openness and accessibility of information about financial transactions for all network participants</h4>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Our values and philosophy</p>
           </div>
         </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col md:gap-[160px] gap-[112px]">
+            <div class="max-w-[756px]">
+              <h2>The core principles guiding Taler in building a secure, private, and accessible financial system</h2>
+            </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Openness and transparency</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/society/icons-outlines2.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Public access to blockchain transactions to build trust</h4>
-          </div>
-        </div>
+            <div class="flex flex-col gap-[112px]">
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Privacy and anonymity</h4>
+                </div>
+                <div>
+                  <img src="./public/img/society/icons-outlines.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Openness and accessibility of information about financial transactions for all network participants</h4>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Efficiency and usability</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/society/icons-outlines3.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Fast, secure payments with an intuitive interface</h4>
-          </div>
-        </div>
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Openness and transparency</h4>
+                </div>
+                <div>
+                  <img src="./public/img/society/icons-outlines2.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Public access to blockchain transactions to build trust</h4>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Digital Inclusion</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/society/icons-outlines4.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Access to financial services without banks or traditional payments</h4>
-          </div>
-        </div>
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Efficiency and usability</h4>
+                </div>
+                <div>
+                  <img src="./public/img/society/icons-outlines3.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Fast, secure payments with an intuitive interface</h4>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Innovation and development</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/society/icons-outlines5.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Advancing cryptography, blockchain, and digital payments</h4>
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Digital Inclusion</h4>
+                </div>
+                <div>
+                  <img src="./public/img/society/icons-outlines4.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Access to financial services without banks or traditional payments</h4>
+                </div>
+              </div>
+
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Innovation and development</h4>
+                </div>
+                <div>
+                  <img src="./public/img/society/icons-outlines5.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Advancing cryptography, blockchain, and digital payments</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -207,7 +216,9 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Payments require improvements</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Payments require improvements</p>
+          </div>
         </div>
         <div class="md:offset-1 md:col-9">
           <div class="card-grid">
@@ -252,30 +263,32 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Security and data protection</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Security and data protection</p>
+          </div>
         </div>
-        <div class="md:offset-1 md:col-7">
-          <h2>Information security experts identify vulnerabilities that could lead to hacks, data breaches, or cyberattacks</h2>
-        </div>
-      </div>
-      
-      <div class="row mt-[80px]">
-        <div class="md:offset-3 md:col-9">
-          <div class="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-4">
-            <div class="card card--light !items-start md:!gap-8 !gap-6">
-              <div class="card__number">1</div>
-              <div class="card__text--lg">Insufficiently strong authentication mechanisms</div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col gap-[80px]">
+            <div class="max-w-[756px]">
+              <h2>Information security experts identify vulnerabilities that could lead to hacks, data breaches, or cyberattacks</h2>
             </div>
 
-            <div class="card card--light !items-start md:!gap-8 !gap-6">
-              <div class="card__number">2</div>
-              <div class="card__text--lg">Limited user
-                control over their financial data</div>
-            </div>
+            <div class="grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-4">
+              <div class="card card--light !items-start md:!gap-8 !gap-6">
+                <div class="card__number">1</div>
+                <div class="card__text--lg">Insufficiently strong authentication mechanisms</div>
+              </div>
 
-            <div class="card card--light !items-start md:!gap-8 !gap-6">
-              <div class="card__number">3</div>
-              <div class="card__text--lg">Lack of effective encryption</div>
+              <div class="card card--light !items-start md:!gap-8 !gap-6">
+                <div class="card__number">2</div>
+                <div class="card__text--lg">Limited user
+                  control over their financial data</div>
+              </div>
+
+              <div class="card card--light !items-start md:!gap-8 !gap-6">
+                <div class="card__number">3</div>
+                <div class="card__text--lg">Lack of effective encryption</div>
+              </div>
             </div>
           </div>
         </div>
@@ -287,7 +300,9 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">TALER White Paper</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">TALER White Paper</p>
+          </div>
         </div>
         <div class="md:offset-1 md:col-7">
           <h2 class="md:mb-[64px] mb-[56px]">This document describes Taler's approach to the design and implementation of its system's core technologies</h2>
@@ -306,7 +321,9 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Brand hub</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Brand hub</p>
+          </div>
         </div>
         <div class="md:offset-1 md:col-7">
           <h3 class="md:mb-[40px] mb-[56px] font-normal">Ready-made design solutions to help you easily utilize our brand across a variety of mediums</h3>
@@ -322,62 +339,68 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Impact on Climate</p>
-        </div>
-        <div class="md:offset-1 md:col-7">
-          <h2>Faster technologies contribute to less electricity and energy consumption</h2>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
-        <div class="row">
-          <div class="md:offset-3 md:col-3 mdMax:mb-[32px]">
-            <h4>Carbon Footprint</h4>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Impact on Climate</p>
           </div>
-          <div class="md:col-6">
-            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
-              <div class="card--type3">
-                <div class="card__text-1">Emissions (annualized):</div>
-                <div class="card__text-2">3,941,139.46 kgCO₂e</div>
-              </div>
-
-              <div class="card--type3">
-                <div class="card__text-1">Emissions per 1 sol:</div>
-                <div class="card__text-2">0.02267 gCO₂e</div>
-              </div>
-
-              <div class="card--type3">
-                <div class="card__text-1">Emissions per transaction:</div>
-                <div class="card__text-2">0.00187 gCO₂e</div>
-              </div>
-
-              <div class="card--type3">
-                <div class="card__text-1">CO₂ intensity:</div>
-                <div class="card__text-2">0.310 kgCO₂e/kWh</div>
-              </div>
+        </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col gap-[112px] md:gap-[160px]">
+            <div class="max-w-[756px]">
+              <h2>Faster technologies contribute to less electricity and energy consumption</h2>
             </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="md:offset-3 md:col-3 mdMax:mb-[32px]">
-            <h4>Electricity Consumption</h4>
-          </div>
-          <div class="md:col-6">
-            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
-              <div class="card--type3">
-                <div class="card__text-1">Electricity (annualized):</div>
-                <div class="card__text-2">12,727,620.70 kWh</div>
+            <div class="flex flex-col gap-[112px]">
+              <div class="content-cols-2 content-cols-2--type2">
+                <div>
+                  <h4>Carbon Footprint</h4>
+                </div>
+                <div>
+                  <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
+                    <div class="card--type3">
+                      <div class="card__text-1">Emissions (annualized):</div>
+                      <div class="card__text-2">3,941,139.46 kgCO₂e</div>
+                    </div>
+
+                    <div class="card--type3">
+                      <div class="card__text-1">Emissions per 1 sol:</div>
+                      <div class="card__text-2">0.02267 gCO₂e</div>
+                    </div>
+
+                    <div class="card--type3">
+                      <div class="card__text-1">Emissions per transaction:</div>
+                      <div class="card__text-2">0.00187 gCO₂e</div>
+                    </div>
+
+                    <div class="card--type3">
+                      <div class="card__text-1">CO₂ intensity:</div>
+                      <div class="card__text-2">0.310 kgCO₂e/kWh</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="card--type3">
-                <div class="card__text-1">Electricity per 1 sol:</div>
-                <div class="card__text-2">0.07320 Wh</div>
-              </div>
+              <div class="content-cols-2 content-cols-2--type2">
+                <div>
+                  <h4>Electricity Consumption</h4>
+                </div>
+                <div>
+                  <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4">
+                    <div class="card--type3">
+                      <div class="card__text-1">Electricity (annualized):</div>
+                      <div class="card__text-2">12,727,620.70 kWh</div>
+                    </div>
 
-              <div class="card--type3 md:col-span-2">
-                <div class="card__text-1">Electricity per transaction:</div>
-                <div class="card__text-2">0.00604 Wh</div>
+                    <div class="card--type3">
+                      <div class="card__text-1">Electricity per 1 sol:</div>
+                      <div class="card__text-2">0.07320 Wh</div>
+                    </div>
+
+                    <div class="card--type3 md:col-span-2">
+                      <div class="card__text-1">Electricity per transaction:</div>
+                      <div class="card__text-2">0.00604 Wh</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -390,44 +413,49 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Community
-            and participants</p>
-        </div>
-        <div class="md:offset-1 md:col-7">
-          <h2>The Taler community brings together people from different backgrounds and interests, united by the common goal of creating a sustainable and decentralized financial system</h2>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
-        <div class="row mdMax:gap-[80px]">
-          <div class="md:offset-3 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Users</h3>
-            <p class="p-md">Use the Taler token for payments, transfers, and investments. They are active community members contributing to the development and dissemination of the Taler platform</p>
-          </div>
-
-          <div class="md:offset-1 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Developers</h3>
-            <p class="p-md">Technical experts who build and improve the software, blockchain and smart contracts that make up the Taler platform</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Community and participants</p>
           </div>
         </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col gap-[112px] md:gap-[160px]">
+            <div class="max-w-[756px]">
+              <h2>The Taler community brings together people from different backgrounds and interests, united by the common goal of creating a sustainable and decentralized financial system</h2>
+            </div>
 
-        <div class="row mdMax:gap-[80px]">
-          <div class="md:offset-3 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Economists and financial experts</h3>
-            <p class="p-md">Study and analyze financial markets and trends to help create a sustainable and efficient financial system</p>
-          </div>
+            <div class="flex flex-col md:gap-[112px] gap-[80px]">
+              <div class="content-cols-2 content-cols-2--type3">
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Users</h3>
+                  <p class="p-md">Use the Taler token for payments, transfers, and investments. They are active community members contributing to the development and dissemination of the Taler platform</p>
+                </div>
 
-          <div class="md:offset-1 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Activists and advocates</h3>
-            <p class="p-md">Work on spreading information about the benefits and opportunities of using the Taler token, attracting new participants and maintaining interest in the project</p>
-          </div>
-        </div>
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Developers</h3>
+                  <p class="p-md">Technical experts who build and improve the software, blockchain and smart contracts that make up the Taler platform</p>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[80px]">
-          <div class="md:offset-3 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Researchers
-              and security experts</h3>
-            <p class="p-md">Responsible for ensuring security and data protection by developing modern encryption methods and mechanisms to defend against cyberattacks</p>
+              <div class="content-cols-2 content-cols-2--type3">
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Economists and financial experts</h3>
+                  <p class="p-md">Study and analyze financial markets and trends to help create a sustainable and efficient financial system</p>
+                </div>
+
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Activists and advocates</h3>
+                  <p class="p-md">Work on spreading information about the benefits and opportunities of using the Taler token, attracting new participants and maintaining interest in the project</p>
+                </div>
+              </div>
+
+              <div class="content-cols-2 content-cols-2--type3">
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Researchers
+                    and security experts</h3>
+                  <p class="p-md">Responsible for ensuring security and data protection by developing modern encryption methods and mechanisms to defend against cyberattacks</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

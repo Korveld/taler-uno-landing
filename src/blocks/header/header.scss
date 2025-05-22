@@ -43,8 +43,11 @@
     .menu {
       background: theme('colors.light2');
 
-      &__list a:not(:hover) {
-        color: theme('colors.dark');
+      &__list {
+
+        a:not(:hover):not(.is-active) {
+          color: theme('colors.dark');
+        }
       }
     }
 

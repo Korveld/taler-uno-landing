@@ -1,8 +1,7 @@
 .sticky-side-title {
-  position: sticky;
-  top: 82px;
 
   @media only screen and (min-width: theme('screens.md')) {
+    position: sticky;
     top: 120px;
   }
 

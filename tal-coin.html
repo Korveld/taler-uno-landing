@@ -116,10 +116,14 @@
 </header>
 
 <main class="main">
-  <section class="md:pt-[96px] md:pb-[172px] pt-[56px] pb-[112px] bg-light2">
+  <section class="pt-0 md:pb-[172px] pb-[112px] bg-light2">
     <div class="container">
-      <div class="md:mb-[96px] mb-[56px]">
-        <img src="./public/img/tal-coin/hero-img.svg" alt="">
+      <div>
+        <!--<img src="./public/img/tal-coin/hero-img.svg" alt="">-->
+        <video autoplay loop muted class="hero__video">
+          <source src="./src/videos/03.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <h1 class="md:mb-9 mb-10">Tal coin</h1>
       <h3 class="font-normal max-w-[1090px]">The use of the Taler token offers a number of significant advantages and opportunities in various fields</h3>
@@ -130,84 +134,90 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">The capabilities and advantages</p>
-        </div>
-        <div class="md:offset-1 md:col-7">
-          <h2>The use of the Taler token offers significant advantages and opportunities in various fields</h2>
-        </div>
-      </div>
-      
-      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-2">
-            <h4>Financial transactions</h4>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">The capabilities and advantages</p>
           </div>
-          <div class="md:col-2">
-            <img src="./public/img/tal-coin/icons-dots.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-5">
-            <div class="flex flex-col gap-8">
-              <h4 class="font-normal">Fast and reliable payment transactions thanks to blockchain technology</h4>
-              <h4 class="font-normal">Low fees for payment operations</h4>
-              <h4 class="font-normal">Blockchain ensures transparent and secure transactions</h4>
+        </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col md:gap-[160px] gap-[112px]">
+            <div class="max-w-[756px]">
+              <h2>The use of the Taler token offers significant advantages and opportunities in various fields</h2>
             </div>
-          </div>
-        </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-2">
-            <h4>E-commerce</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/tal-coin/icons-dots2.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-5">
-            <div class="flex flex-col gap-8">
-              <h4 class="font-normal">Convenient and secure online payments when shopping on the internet</h4>
-              <h4 class="font-normal">Privacy protection through anonymous and pseudonymous payment solutions</h4>
-            </div>
-          </div>
-        </div>
+            <div class="flex flex-col gap-[112px]">
+              <div class="content-cols-3">
+                <div>
+                  <h4>Financial transactions</h4>
+                </div>
+                <div>
+                  <img src="./public/img/tal-coin/icons-dots.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <div class="flex flex-col gap-8">
+                    <h4 class="font-normal">Fast and reliable payment transactions thanks to blockchain technology</h4>
+                    <h4 class="font-normal">Low fees for payment operations</h4>
+                    <h4 class="font-normal">Blockchain ensures transparent and secure transactions</h4>
+                  </div>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-2">
-            <h4>Financial services</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/tal-coin/icons-dots3.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-5">
-            <div class="flex flex-col gap-8">
-              <h4 class="font-normal">Expands access to financial services for the unbanked</h4>
-              <h4 class="font-normal">Builds trust through decentralized Taler-based finance</h4>
-            </div>
-          </div>
-        </div>
+              <div class="content-cols-3">
+                <div>
+                  <h4>E-commerce</h4>
+                </div>
+                <div>
+                  <img src="./public/img/tal-coin/icons-dots2.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <div class="flex flex-col gap-8">
+                    <h4 class="font-normal">Convenient and secure online payments when shopping on the internet</h4>
+                    <h4 class="font-normal">Privacy protection through anonymous and pseudonymous payment solutions</h4>
+                  </div>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-2">
-            <h4>Charity</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/tal-coin/icons-dots4.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-5">
-            <div class="flex flex-col gap-8">
-              <h4 class="font-normal">Simplifying the donation process to charitable organizations, ensuring more effective use of funds and increasing transparency of expenditures</h4>
-            </div>
-          </div>
-        </div>
+              <div class="content-cols-3">
+                <div>
+                  <h4>Financial services</h4>
+                </div>
+                <div>
+                  <img src="./public/img/tal-coin/icons-dots3.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <div class="flex flex-col gap-8">
+                    <h4 class="font-normal">Expands access to financial services for the unbanked</h4>
+                    <h4 class="font-normal">Builds trust through decentralized Taler-based finance</h4>
+                  </div>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-2">
-            <h4>International transfers</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/tal-coin/icons-dots5.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-5">
-            <div class="flex flex-col gap-8">
-              <h4 class="font-normal">Fast and affordable international transfers with minimal fees and no intermediaries</h4>
+              <div class="content-cols-3">
+                <div>
+                  <h4>Charity</h4>
+                </div>
+                <div>
+                  <img src="./public/img/tal-coin/icons-dots4.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <div class="flex flex-col gap-8">
+                    <h4 class="font-normal">Simplifying the donation process to charitable organizations, ensuring more effective use of funds and increasing transparency of expenditures</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-cols-3">
+                <div>
+                  <h4>International transfers</h4>
+                </div>
+                <div>
+                  <img src="./public/img/tal-coin/icons-dots5.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <div class="flex flex-col gap-8">
+                    <h4 class="font-normal">Fast and affordable international transfers with minimal fees and no intermediaries</h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -219,8 +229,9 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Why should
-            you choose Tal coin?</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Why should you choose Tal coin?</p>
+          </div>
         </div>
         <div class="md:offset-1 md:col-9">
           <div class="card-grid">
@@ -281,44 +292,50 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Taler solutions for financial challenges</p>
-        </div>
-        <div class="md:offset-1 md:col-7">
-          <h2>Using the Taler token on the Substrate blockchain opens up a range of innovative features and opportunities</h2>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
-        <div class="row mdMax:gap-[80px]">
-          <div class="md:offset-3 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Programmable
-              cash flows</h3>
-            <p class="p-md">Creating programmable cash flows that automatically execute under certain conditions and rules. For example, setting up automatic payments of rewards or dividends</p>
-          </div>
-
-          <div class="md:offset-1 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Decentralized
-              financial operations</h3>
-            <p class="p-md">Taler conducts financial operations without the involvement of banks or payment systems. This ensures independence and control over one's finances.</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Taler solutions for financial challenges</p>
           </div>
         </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col gap-[112px] md:gap-[160px]">
+            <div class="max-w-[756px]">
+              <h2>Using the Taler token on the Substrate blockchain opens up a range of innovative features and opportunities</h2>
+            </div>
 
-        <div class="row mdMax:gap-[80px]">
-          <div class="md:offset-3 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">User applications</h3>
-            <p class="p-md">Developers can create applications and services based on the Taler token, expanding its functionality and use: a payment gateway for online stores, a finance management app, or a payment solution for mobile devices.</p>
-          </div>
+            <div class="flex flex-col md:gap-[112px] gap-[80px]">
+              <div class="content-cols-2 content-cols-2--type3">
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Programmable
+                    cash flows</h3>
+                  <p class="p-md">Creating programmable cash flows that automatically execute under certain conditions and rules. For example, setting up automatic payments of rewards or dividends</p>
+                </div>
 
-          <div class="md:offset-1 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Smart contracts</h3>
-            <p class="p-md">Automation and programming of financial operations through the Substrate blockchain creates a variety of financial tools and services governed by code, enhancing flexibility and efficiency.</p>
-          </div>
-        </div>
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Decentralized
+                    financial operations</h3>
+                  <p class="p-md">Taler conducts financial operations without the involvement of banks or payment systems. This ensures independence and control over one's finances.</p>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[80px]">
-          <div class="md:offset-3 md:col-4">
-            <h3 class="mb-[20px] mdMax:text-[28px]">Integration with other blockchains</h3>
-            <p class="p-md">The Taler token can be integrated with other blockchains and cryptocurrencies, allowing users to conduct financial operations across various ecosystems without the need for token conversion.</p>
+              <div class="content-cols-2 content-cols-2--type3">
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">User applications</h3>
+                  <p class="p-md">Developers can create applications and services based on the Taler token, expanding its functionality and use: a payment gateway for online stores, a finance management app, or a payment solution for mobile devices.</p>
+                </div>
+
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Smart contracts</h3>
+                  <p class="p-md">Automation and programming of financial operations through the Substrate blockchain creates a variety of financial tools and services governed by code, enhancing flexibility and efficiency.</p>
+                </div>
+              </div>
+
+              <div class="content-cols-2 content-cols-2--type3">
+                <div>
+                  <h3 class="mb-[20px] mdMax:text-[28px]">Integration with other blockchains</h3>
+                  <p class="p-md">The Taler token can be integrated with other blockchains and cryptocurrencies, allowing users to conduct financial operations across various ecosystems without the need for token conversion.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@
         <div class="menu__wrapper">
           <ul class="menu__list">
             <li>
-              <a href="./technology.html">Technology</a>
+              <a href="./technology.html" class="is-active">Technology</a>
             </li>
             <li>
               <a href="./society.html">Society</a>
@@ -116,10 +116,14 @@
 </header>
 
 <main class="main">
-  <section class="md:pt-[96px] md:pb-[172px] pt-[56px] pb-[112px] bg-light2">
+  <section class="pt-0 md:pb-[172px] pb-[112px] bg-light2">
     <div class="container">
-      <div class="md:mb-[96px] mb-[56px]">
-        <img src="./public/img/technology/img1.svg" alt="">
+      <div>
+        <!--<img src="./public/img/technology/img1.svg" alt="">-->
+        <video autoplay loop muted class="hero__video">
+          <source src="./src/videos/01.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <h1 class="md:mb-9 mb-10">Technology</h1>
       <h3 class="font-normal">Secure & Effortless Experience</h3>
@@ -130,7 +134,9 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Fast Blockchain</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Fast Blockchain</p>
+          </div>
         </div>
         <div class="md:offset-1 md:col-7">
           <h2 class="md:mb-[64px] mb-[48px]">The Taler Blockchain achieves over 3.5 million transactions per second through its unique Proof-of-Utility Consensus</h2>
@@ -154,7 +160,9 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">TALER for Developers</p>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">TALER for Developers</p>
+          </div>
         </div>
         <div class="md:offset-1 md:col-7">
           <h2 class="md:mb-[64px] mb-[48px]">Quick start and deep dive into development on TALER</h2>
@@ -170,75 +178,81 @@
     <div class="container">
       <div class="row mdMax:gap-[80px]">
         <div class="md:col-2">
-          <p class="p-md mdMax:!text-[40px] mdMax:!font-bold mdMax:!leading-[110%] mdMax:!tracking-[0px]">Substrate & TALER</p>
-        </div>
-        <div class="md:offset-1 md:col-7">
-          <h2 class="md:mb-[64px] mb-[48px]">The Taler token is built on the Substrate blockchain platform, which provides flexibility and scalability to the system, allowing the technology to be adapted to various needs and conditions.</h2>
-          <h4 class="md:mb-[64px] mb-[48px] font-normal">The principles of decentralization and community governance ensure equality among participants and the ability to make decisions that take into account the opinions of all stakeholders.</h4>
-          <a href="#" class="btn btn-outline-primary">
-            <span>Learn more</span>
-          </a>
-        </div>
-      </div>
-      
-      <div class="flex flex-col gap-[112px] md:mt-[160px] mt-[112px]">
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Transparency</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/technology/icons-outlines.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Openness and accessibility of information about financial transactions for all network participants</h4>
+          <div class="sticky-side-title md:!top-[20px]">
+            <p class="p-md">Substrate & TALER</p>
           </div>
         </div>
+        <div class="md:offset-1 md:col-9">
+          <div class="flex flex-col md:gap-[160px] gap-[112px]">
+            <div class="max-w-[756px]">
+              <h2 class="md:mb-[64px] mb-[48px]">The Taler token is built on the Substrate blockchain platform, which provides flexibility and scalability to the system, allowing the technology to be adapted to various needs and conditions.</h2>
+              <h4 class="md:mb-[64px] mb-[48px] font-normal">The principles of decentralization and community governance ensure equality among participants and the ability to make decisions that take into account the opinions of all stakeholders.</h4>
+              <a href="#" class="btn btn-outline-primary">
+                <span>Learn more</span>
+              </a>
+            </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Security</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/technology/icons-outlines2.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Protection against fraud, reduced risks through cryptographic methods</h4>
-          </div>
-        </div>
+            <div class="flex flex-col gap-[112px]">
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Transparency</h4>
+                </div>
+                <div>
+                  <img src="./public/img/technology/icons-outlines.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Openness and accessibility of information about financial transactions for all network participants</h4>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Efficiency</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/technology/icons-outlines3.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Reduction of transaction processing time and simplification of processes</h4>
-          </div>
-        </div>
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Security</h4>
+                </div>
+                <div>
+                  <img src="./public/img/technology/icons-outlines2.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Protection against fraud, reduced risks through cryptographic methods</h4>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Low fees</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/technology/icons-outlines4.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Thanks to the efficiency and low costs of blockchain technology</h4>
-          </div>
-        </div>
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Efficiency</h4>
+                </div>
+                <div>
+                  <img src="./public/img/technology/icons-outlines3.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Reduction of transaction processing time and simplification of processes</h4>
+                </div>
+              </div>
 
-        <div class="row mdMax:gap-[32px]">
-          <div class="md:offset-3 md:col-3">
-            <h4>Financial inclusivity</h4>
-          </div>
-          <div class="md:col-2">
-            <img src="./public/img/technology/icons-outlines5.svg" alt="" class="md:mx-auto">
-          </div>
-          <div class="md:col-4">
-            <h4 class="font-normal">Access to financial services for the entire population, including those who have been excluded from the traditional financial system</h4>
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Low fees</h4>
+                </div>
+                <div>
+                  <img src="./public/img/technology/icons-outlines4.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Thanks to the efficiency and low costs of blockchain technology</h4>
+                </div>
+              </div>
+
+              <div class="content-cols-3 content-cols-3--type2">
+                <div>
+                  <h4>Financial inclusivity</h4>
+                </div>
+                <div>
+                  <img src="./public/img/technology/icons-outlines5.svg" alt="" class="md:mx-auto">
+                </div>
+                <div>
+                  <h4 class="font-normal">Access to financial services for the entire population, including those who have been excluded from the traditional financial system</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

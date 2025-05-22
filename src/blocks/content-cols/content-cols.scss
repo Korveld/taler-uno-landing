@@ -8,6 +8,26 @@
 
       @apply md:px-[12px] flex flex-col gap-[80px] md:gap-[120px];
     }
+
+    &--type2 {
+      grid-template-columns: 32% 65%;
+      gap: 24px;
+
+      @media only screen and (max-width: theme('screens.mdMax.max')) {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    &--type3 {
+      grid-template-columns: 1fr 1fr;
+      gap: 13%;
+
+      @media only screen and (max-width: theme('screens.mdMax.max')) {
+        grid-template-columns: 1fr;
+        gap: 80px;
+      }
+    }
   }
 
   &-3 {
@@ -18,6 +38,14 @@
       grid-template-columns: 1fr;
 
       @apply gap-8;
+    }
+
+    &--type2 {
+      grid-template-columns: 33% 24% auto;
+
+      @media only screen and (max-width: theme('screens.mdMax.max')) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

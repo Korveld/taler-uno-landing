@@ -59,7 +59,8 @@
         color: #ffffff;
       }
 
-      &:hover {
+      &:hover,
+      &.is-active {
         color: theme('colors.blue');
       }
     }

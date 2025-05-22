@@ -95,6 +95,28 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
+});
+
+jQuery(function ($) {
+});
+
+jQuery(function ($) {
+  $('.js-scroll-to').on('click', function(e) {
+    e.preventDefault();
+
+    var $container = $('html, body'),
+      $scrollTo = $($($(this).attr('href')));
+    
+    /*$container.scrollTop(
+      $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+    );*/
+    $container.animate({
+      scrollTop: $scrollTo.offset().top
+    }, 500);
+  });
+});
+
+jQuery(function ($) {
   var mq = window.matchMedia( "(min-width: 767.98px)" );
   var mqMob = window.matchMedia( "(max-width: 768px)" );
   
@@ -125,26 +147,4 @@ jQuery(function ($) {
       $('.lang-switcher__overlay').fadeOut(300);
     }
   });
-});
-
-jQuery(function ($) {
-});
-
-jQuery(function ($) {
-  $('.js-scroll-to').on('click', function(e) {
-    e.preventDefault();
-
-    var $container = $('html, body'),
-      $scrollTo = $($($(this).attr('href')));
-    
-    /*$container.scrollTop(
-      $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
-    );*/
-    $container.animate({
-      scrollTop: $scrollTo.offset().top
-    }, 500);
-  });
-});
-
-jQuery(function ($) {
 });
