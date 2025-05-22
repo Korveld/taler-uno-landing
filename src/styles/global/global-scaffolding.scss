@@ -18,7 +18,7 @@ body {
   background: theme('colors.primary');
   -webkit-font-smoothing: antialiased;
 
-  @apply font-inter;
+  @apply font-sans;
 
   &::-webkit-scrollbar {
   }

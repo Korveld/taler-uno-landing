@@ -1,24 +1,4 @@
 jQuery(function ($) {
-
-  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
-    $('.cookie-banner').fadeIn(300);
-  }
-  
-  $('#accept-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-
-  $('#reject-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-  
-});
-
-jQuery(function ($) {
   $('.faq__question').on('click', function(e) {
     e.preventDefault();
     if ($(this).parent().hasClass('is-open')) {
@@ -84,6 +64,16 @@ jQuery(function ($) {
         $('.header__logo--dark').hide();
       }
     }
+
+    if ($("#header_fixed_trigger").length) {
+      var changeFixedTrigger = $("#header_fixed_trigger").offset().top - $(window).scrollTop() - offset;
+
+      if (changeFixedTrigger <= 0) {
+        $(".header").addClass("is-animated-fixed");
+      } else {
+        $(".header").removeClass("is-animated-fixed");
+      }
+    }
   }
 
   $(window).on('scroll', function () {
@@ -95,25 +85,23 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
-});
 
-jQuery(function ($) {
-});
-
-jQuery(function ($) {
-  $('.js-scroll-to').on('click', function(e) {
+  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
+    $('.cookie-banner').fadeIn(300);
+  }
+  
+  $('#accept-cookies').on('click', function (e) {
     e.preventDefault();
-
-    var $container = $('html, body'),
-      $scrollTo = $($($(this).attr('href')));
-    
-    /*$container.scrollTop(
-      $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
-    );*/
-    $container.animate({
-      scrollTop: $scrollTo.offset().top
-    }, 500);
+    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
   });
+
+  $('#reject-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+  
 });
 
 jQuery(function ($) {
@@ -146,5 +134,27 @@ jQuery(function ($) {
       $('.lang-switcher__dropdown').fadeOut(300);
       $('.lang-switcher__overlay').fadeOut(300);
     }
+  });
+});
+
+jQuery(function ($) {
+});
+
+jQuery(function ($) {
+});
+
+jQuery(function ($) {
+  $('.js-scroll-to').on('click', function(e) {
+    e.preventDefault();
+
+    var $container = $('html, body'),
+      $scrollTo = $($($(this).attr('href')));
+    
+    /*$container.scrollTop(
+      $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+    );*/
+    $container.animate({
+      scrollTop: $scrollTo.offset().top
+    }, 500);
   });
 });

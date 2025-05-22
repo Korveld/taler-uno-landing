@@ -36,6 +36,16 @@ jQuery(function ($) {
         $('.header__logo--dark').hide();
       }
     }
+
+    if ($("#header_fixed_trigger").length) {
+      var changeFixedTrigger = $("#header_fixed_trigger").offset().top - $(window).scrollTop() - offset;
+
+      if (changeFixedTrigger <= 0) {
+        $(".header").addClass("is-animated-fixed");
+      } else {
+        $(".header").removeClass("is-animated-fixed");
+      }
+    }
   }
 
   $(window).on('scroll', function () {
