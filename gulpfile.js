@@ -62,9 +62,14 @@ const paths = {
     watch: './src/fonts/*'
   },
   videos: {
-    src: ['./src/videos/*', './src/videos/**/*'],
+    src: './src/videos/*',
     dest: './public/videos',
     watch: './src/videos/*'
+  },
+  riv_animations: {
+    src: './src/riv_animations/*',
+    dest: './public/riv_animations',
+    watch: './src/riv_animations/*'
   },
 };
 
@@ -193,6 +198,15 @@ gulp.task('videos', function () {
     }));
 });
 
+gulp.task('riv_animations', function () {
+  return gulp.src(paths.riv_animations.src)
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.riv_animations.dest))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
 gulp.task('server', function () {
   browserSync.init({
     server: {
@@ -209,7 +223,7 @@ gulp.task('server', function () {
   gulp.watch(paths.images.watch, gulp.parallel('images'));
   gulp.watch(paths.fonts.watch, gulp.parallel('fonts'));
   // gulp.watch(paths.videos.watch, gulp.parallel('videos'));
-  // gulp.watch('./public/videos/**/*', gulp.parallel('generateConfig'));
+  // gulp.watch(paths.riv_animations.watch, gulp.parallel('riv_animations'));
 });
 
 gulp.task('watch', function () {
@@ -222,8 +236,7 @@ gulp.task('watch', function () {
   gulp.watch(paths.images.watch, gulp.parallel('images'));
   gulp.watch(paths.fonts.watch, gulp.parallel('fonts'));
   // gulp.watch(paths.videos.watch, gulp.parallel('videos'));
-  // gulp.watch(paths.webfonts.watch, gulp.parallel('webfonts'));
-  // gulp.watch('./public/videos/**/*', gulp.parallel('generateConfig'));
+  // gulp.watch(paths.riv_animations.watch, gulp.parallel('riv_animations'));
 });
 
 gulp.task('dev', gulp.series(
@@ -233,9 +246,9 @@ gulp.task('dev', gulp.series(
   'scripts',
   'fonts',
   // 'videos',
+  // 'riv_animations',
   'images',
   'images-webp',
-  // 'generateConfig',
   'server'
 ));
 
@@ -246,7 +259,7 @@ gulp.task('build', gulp.series(
   'scripts',
   'fonts',
   // 'videos',
+  // 'riv_animations',
   'images',
   'images-webp',
-  // 'generateConfig',
 ));

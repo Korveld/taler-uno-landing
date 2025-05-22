@@ -15,10 +15,10 @@ body {
   line-height: 1.2;
   font-weight: 400;
   color: theme('colors.dark');
-  background: theme('colors.light2');
+  background: theme('colors.primary');
   -webkit-font-smoothing: antialiased;
 
-  @apply font-sans;
+  @apply font-inter;
 
   &::-webkit-scrollbar {
   }

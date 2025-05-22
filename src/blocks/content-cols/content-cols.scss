@@ -1,0 +1,23 @@
+.content-cols {
+
+  &-2 {
+
+    @apply grid md:grid-cols-2 grid-cols-1 md:gap-[8.932%] gap-[80px];
+
+    &__col {
+
+      @apply md:px-[12px] flex flex-col gap-[80px] md:gap-[120px];
+    }
+  }
+
+  &-3 {
+    display: grid;
+    grid-template-columns: 22.7% 22.7% auto;
+
+    @media only screen and (max-width: theme('screens.mdMax.max')) {
+      grid-template-columns: 1fr;
+
+      @apply gap-8;
+    }
+  }
+}

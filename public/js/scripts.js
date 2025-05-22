@@ -65,9 +65,33 @@ jQuery(function ($) {
       $('body').css('overflow', 'hidden');
     }
   });
-});
+  
+  var HeaderColorHandler = function () {
+    var offset = 60; // Offset for earlier trigger
 
-jQuery(function ($) {
+    if ($("#header_color_trigger").length) {
+      var changeColorTrigger = $("#header_color_trigger").offset().top - $(window).scrollTop() - offset;
+
+      if (changeColorTrigger <= 0) {
+        $(".header").addClass("is-light");
+        $(".header").addClass("is-animated-fixed");
+        $('.header__logo--light').hide();
+        $('.header__logo--dark').show();
+      } else {
+        $(".header").removeClass("is-light");
+        $(".header").removeClass("is-animated-fixed");
+        $('.header__logo--light').show();
+        $('.header__logo--dark').hide();
+      }
+    }
+  }
+
+  $(window).on('scroll', function () {
+    HeaderColorHandler();
+  });
+  $(window).on('load', function () {
+    HeaderColorHandler();
+  });
 });
 
 jQuery(function ($) {
@@ -120,4 +144,7 @@ jQuery(function ($) {
       scrollTop: $scrollTo.offset().top
     }, 500);
   });
+});
+
+jQuery(function ($) {
 });

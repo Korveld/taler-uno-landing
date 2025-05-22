@@ -1,14 +1,40 @@
+@keyframes slideDown {
+
+  from {
+    /* or 0% */
+    top: -100px;
+  }
+
+  to {
+    /* or 100% */
+    top: 0;
+  }
+}
+
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 0;
   left: 0;
   padding: 27px 0;
   width: 100%;
   background: theme('colors.primary');
+  //transition: top .4s ease;
 
   @media only screen and (max-width: theme('screens.mdMax.max')) {
     padding: 16px 0;
+  }
+
+  &.is-fixed {
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(33, 33, 33, .08);
+  }
+
+  &.is-animated-fixed {
+    position: fixed;
+    top: -100px;
+    box-shadow: 0 4px 8px 0 rgba(33, 33, 33, .08);
+    animation: slideDown .3s ease-in-out 0s forwards;
   }
 
   &.is-light {

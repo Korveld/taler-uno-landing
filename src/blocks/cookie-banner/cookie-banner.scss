@@ -54,7 +54,8 @@
       min-height: 50px;
     }
 
-    &:hover {
+    &:hover,
+    &.is-active {
 
       &:before {
         opacity: 0;

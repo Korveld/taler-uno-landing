@@ -1,0 +1,13 @@
+.sticky-side-title {
+  position: sticky;
+  top: 82px;
+
+  @media only screen and (min-width: theme('screens.md')) {
+    top: 120px;
+  }
+
+  p {
+
+    @apply mdMax:text-[40px] mdMax:font-bold mdMax:leading-[110%] mdMax:tracking-[0px] #{!important};
+  }
+}
