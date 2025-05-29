@@ -116,14 +116,14 @@
 </header>
 
 <main class="main">
-  <section class="pt-0 md:pb-[172px] pb-[112px] bg-light2">
+  <section class="md:pt-[96px] md:pb-[172px] pt-[56px] pb-[112px] bg-light2">
     <div class="container">
-      <div>
-        <!--<img src="./public/img/tal-coin/hero-img.svg" alt="">-->
-        <video autoplay loop muted class="hero__video">
+      <div class="md:mb-[96px] mb-[56px]">
+        <img src="./public/img/tal-coin/hero-img.svg" alt="">
+        <!--<video autoplay loop muted class="hero__video">
           <source src="./src/videos/03.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video>-->
       </div>
       <h1 class="md:mb-9 mb-10">Tal coin</h1>
       <h3 class="font-normal max-w-[1090px]">The use of the Taler token offers a number of significant advantages and opportunities in various fields</h3>
@@ -347,7 +347,7 @@
   <div class="container">
     <div class="flex md:justify-between mdMax:flex-col mdMax:gap-20">
       <div>
-        <div class="md:mb-[43px] mb-6">
+        <div class="md:mb-[43px] mb-6 -ml-[8px]">
           <picture>
             <source srcset="./public/img/logo-footer-2.webp" type="image/webp">
             <img src="./public/img/logo-footer-2.png" alt="" width="57" height="58">
@@ -357,7 +357,7 @@
       </div>
 
       <div class="md:inline-flex md:gap-[40px] mdMax:grid mdMax:grid-cols-2 gap-4">
-        <div class="inline-flex flex-col gap-8 min-w-[135px]">
+        <div class="inline-flex flex-col gap-[12px] min-w-[135px] md:mt-[13px]">
           <p class="footer-nav__title">About</p>
 
           <ul class="footer-nav">
@@ -368,7 +368,7 @@
           </ul>
         </div>
 
-        <div class="inline-flex flex-col gap-8 min-w-[135px]">
+        <div class="inline-flex flex-col gap-[12px] min-w-[135px] md:mt-[15px]">
           <p class="footer-nav__title">Base</p>
 
           <ul class="footer-nav">
@@ -382,7 +382,8 @@
     <div class="md:mt-[160px] mt-[112px] flex md:justify-between md:items-center mdMax:flex-col gap-8">
       <a href="mailto:info@taler.foundation" class="footer__link">info@taler.foundation</a>
 
-      <div class="socials">
+      <p class="footer__link">© 2025 Taler</p>
+      <!--<div class="socials">
         <a href="#">
           <img src="./public/img/socials/mail.svg" alt="">
         </a>
@@ -398,7 +399,7 @@
         <a href="#">
           <img src="./public/img/socials/twitter.svg" alt="">
         </a>
-      </div>
+      </div>-->
     </div>
   </div>
 </footer>

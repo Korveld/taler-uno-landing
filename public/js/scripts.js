@@ -168,27 +168,6 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
-  const canvas = document.getElementById("hero-rive-canvas");
-
-  const riveInstance = new rive.Rive({
-    src: "./src/riv_animations/index_anim.riv",
-    canvas: canvas,
-    autoplay: true,
-    layout: new rive.Layout({
-      fit: rive.Fit.contain,
-      alignment: rive.Alignment.CenterLeft,
-    }),
-    onLoad: () => {
-      riveInstance.resizeDrawingSurfaceToCanvas();
-    },
-  });
-
-  window.addEventListener('resize', () => {
-    riveInstance.resizeDrawingSurfaceToCanvas();
-  });
-});
-
-jQuery(function ($) {
   var mq = window.matchMedia( "(min-width: 767.98px)" );
   var mqMob = window.matchMedia( "(max-width: 768px)" );
   
@@ -218,6 +197,27 @@ jQuery(function ($) {
       $('.lang-switcher__dropdown').fadeOut(300);
       $('.lang-switcher__overlay').fadeOut(300);
     }
+  });
+});
+
+jQuery(function ($) {
+  const canvas = document.getElementById("hero-rive-canvas");
+
+  const riveInstance = new rive.Rive({
+    src: "./src/riv_animations/index_anim.riv",
+    canvas: canvas,
+    autoplay: true,
+    layout: new rive.Layout({
+      fit: rive.Fit.contain,
+      alignment: rive.Alignment.CenterLeft,
+    }),
+    onLoad: () => {
+      riveInstance.resizeDrawingSurfaceToCanvas();
+    },
+  });
+
+  window.addEventListener('resize', () => {
+    riveInstance.resizeDrawingSurfaceToCanvas();
   });
 });
 
