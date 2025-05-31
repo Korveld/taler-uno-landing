@@ -62,26 +62,6 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
-
-  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
-    $('.cookie-banner').fadeIn(300);
-  }
-  
-  $('#accept-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-
-  $('#reject-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-  
-});
-
-jQuery(function ($) {
   $('.faq__question').on('click', function(e) {
     e.preventDefault();
     if ($(this).parent().hasClass('is-open')) {
@@ -107,6 +87,26 @@ jQuery(function ($) {
       });
     }
   });
+});
+
+jQuery(function ($) {
+
+  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
+    $('.cookie-banner').fadeIn(300);
+  }
+  
+  $('#accept-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+
+  $('#reject-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+  
 });
 
 jQuery(function ($) {
@@ -168,6 +168,30 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
+  const canvas = document.getElementById("hero-rive-canvas");
+
+  const riveInstance = new rive.Rive({
+    src: "./src/riv_animations/index_anim.riv",
+    canvas: canvas,
+    autoplay: true,
+    layout: new rive.Layout({
+      fit: rive.Fit.contain,
+      alignment: rive.Alignment.CenterLeft,
+    }),
+    onLoad: () => {
+      riveInstance.resizeDrawingSurfaceToCanvas();
+    },
+  });
+
+  window.addEventListener('resize', () => {
+    riveInstance.resizeDrawingSurfaceToCanvas();
+  });
+});
+
+jQuery(function ($) {
+});
+
+jQuery(function ($) {
   var mq = window.matchMedia( "(min-width: 767.98px)" );
   var mqMob = window.matchMedia( "(max-width: 768px)" );
   
@@ -201,33 +225,6 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
-  const canvas = document.getElementById("hero-rive-canvas");
-
-  const riveInstance = new rive.Rive({
-    src: "./src/riv_animations/index_anim.riv",
-    canvas: canvas,
-    autoplay: true,
-    layout: new rive.Layout({
-      fit: rive.Fit.contain,
-      alignment: rive.Alignment.CenterLeft,
-    }),
-    onLoad: () => {
-      riveInstance.resizeDrawingSurfaceToCanvas();
-    },
-  });
-
-  window.addEventListener('resize', () => {
-    riveInstance.resizeDrawingSurfaceToCanvas();
-  });
-});
-
-jQuery(function ($) {
-});
-
-jQuery(function ($) {
-});
-
-jQuery(function ($) {
   $('.js-scroll-to').on('click', function(e) {
     e.preventDefault();
 
@@ -241,4 +238,7 @@ jQuery(function ($) {
       scrollTop: $scrollTo.offset().top
     }, 500);
   });
+});
+
+jQuery(function ($) {
 });
