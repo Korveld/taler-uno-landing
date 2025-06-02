@@ -1,4 +1,24 @@
 jQuery(function ($) {
+
+  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
+    $('.cookie-banner').fadeIn(300);
+  }
+  
+  $('#accept-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+
+  $('#reject-cookies').on('click', function (e) {
+    e.preventDefault();
+    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
+    $('.cookie-banner').fadeOut(300);
+  });
+  
+});
+
+jQuery(function ($) {
   const canvas1 = document.getElementById("card-rive-canvas-1");
   const canvas2 = document.getElementById("card-rive-canvas-2");
   const canvas3 = document.getElementById("card-rive-canvas-3");
@@ -87,26 +107,6 @@ jQuery(function ($) {
       });
     }
   });
-});
-
-jQuery(function ($) {
-
-  if (!$.cookie('cookiesAccepted') || $.cookie('cookiesAccepted') === 'false') {
-    $('.cookie-banner').fadeIn(300);
-  }
-  
-  $('#accept-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'true', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-
-  $('#reject-cookies').on('click', function (e) {
-    e.preventDefault();
-    $.cookie('cookiesAccepted', 'false', { expires: 365, path: '/' });
-    $('.cookie-banner').fadeOut(300);
-  });
-  
 });
 
 jQuery(function ($) {
@@ -225,6 +225,9 @@ jQuery(function ($) {
 });
 
 jQuery(function ($) {
+});
+
+jQuery(function ($) {
   $('.js-scroll-to').on('click', function(e) {
     e.preventDefault();
 
@@ -238,7 +241,4 @@ jQuery(function ($) {
       scrollTop: $scrollTo.offset().top
     }, 500);
   });
-});
-
-jQuery(function ($) {
 });
